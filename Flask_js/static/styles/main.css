@@ -1,0 +1,172 @@
+/* main.html */
+#li_logout {
+    margin-right: 0;
+}
+
+.section_1_main {
+    display: flex;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-left: 8vw;
+    margin-bottom: 5px;
+}
+
+.div_left {
+    max-width: 63vw;
+    margin-right: 3.35vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#table_records {
+    max-height: 385.5px;
+    max-width: 1130px;
+    display: block;
+    float: left;
+    margin-bottom: 5vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tr {
+    height: 35px;
+    border-bottom: solid 1.7px #c1f56c;
+}
+
+#table_records th {
+    padding-right: 7vw;
+    font-size: 1.2em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+background: #A3BCF9; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #576490; 
+}
+
+#button_open {
+    width: 58.8vw;
+    margin-bottom: 5px;
+}
+
+#form {
+    width: max-content;
+    display: none;
+} 
+
+.label_moneda_from {
+    margin-bottom: 2em;
+}
+
+.select_moneda {
+    width: 12em;
+    display: inline-block;
+}
+
+.select_moneda_from {
+    margin-right: 7.5em;
+}
+
+.label_cantidad_from {
+    margin-bottom: 2.7em;
+}
+
+#input_cantidad_from {
+    width: 10.3em;
+    display: inline-block;
+}
+
+#span_calculate {
+    position: relative;
+    top: 14.8px;
+    margin-right: 1.95em;
+    font-size: 40px;
+}
+
+#label_cantidad_to {
+    width: 9em;
+    margin-right: 7em;
+    border: none;
+    box-shadow: none;
+    border-bottom: solid 1.7px #A3BCF9;
+}
+
+.label_pu {
+    margin-left: 23.27em;
+    margin-bottom: 2em;
+}
+
+#label_pu {
+    width: 11.7em;
+    border: none;
+    box-shadow: none;
+    border-bottom: solid 1.7px #A3BCF9;
+}
+
+#button_close {
+    margin-left: 27.4em; 
+    margin-bottom: 3em;
+}
+
+#button_save {
+    margin-bottom: 3em;
+}
+
+#div_balance {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    bottom: 5vh;
+}
+
+.label_titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.span_update {
+    position: relative;
+    top: 6px;
+}
+
+#label_invested {
+    margin-top: 8px;
+}
+
+#label_recovered {
+    margin-top: 11px;
+}
+
+#label_purchase_value {
+    margin-top: 11px;
+}
+
+#label_current_value {
+    margin-top: 11px;
+}
+
+#div_resumen {
+    height: 390px;
+    position: relative;
+    display: none;
+    top: 4px;
+    bottom: 5vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#table_cryptos {
+    position: relative;
+    top: 3px;
+}
+
+#table_cryptos th {
+    padding-right: 3vw;
+    font-size: 1.2em;
+}

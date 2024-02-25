@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>simulador cripto</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../static/styles/base.css">
+        <link rel="stylesheet" href="../static/styles/main.css">
+        <script src="../static/js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <strong>Simulador cripto</strong>
+            <menu>
+                <li id="li_balance">Balance</li>
+                <li id="li_resumen">Resumen</li>
+            
+            </menu>
+        </header>
+        <main>
+            <section class="section_1_main">
+                <div class="div_left">
+                    <table id="table_records">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>From</th>
+                            <th>Cantidad</th>
+                            <th>To</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </table>
+                    <button id="button_open" class="btn btn-lg">+</button>
+                    <form id="form">
+                        <label class="label_standart label_moneda_from" for="floatingInput"><strong>From:</strong></label>
+                        <select id="select_moneda_from" class="form-select select_moneda select_moneda_from">
+                            <option value="" selected disabled hidden>Elija una moneda:</option>
+                            <option value="EUR">EUR</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                            <option value="USDT">USDT</option>
+                            <option value="BNB">BNB</option>
+                            <option value="XRP">XRP</option>
+                            <option value="ADA">ADA</option>
+                            <option value="SOL">SOL</option>
+                            <option value="DOT">DOT</option>
+                            <option value="MATIC">MATIC</option>
+                        </select>
+                        <label class="label_standart" for="floatingInput"><strong>To:</strong></label>
+                        <select id="select_moneda_to" class="form-select select_moneda">
+                            <option value="" selected disabled hidden>Elija una moneda:</option>
+                            <option value="EUR">EUR</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                            <option value="USDT">USDT</option>
+                            <option value="BNB">BNB</option>
+                            <option value="XRP">XRP</option>
+                            <option value="ADA">ADA</option>
+                            <option value="SOL">SOL</option>
+                            <option value="DOT">DOT</option>
+                            <option value="MATIC">MATIC</option>
+                        </select>
+                        <br>
+                        <label class="label_standart label_cantidad_from" for="floatingInput"><strong>Cantidad:</strong></label>
+                        <input id="input_cantidad_from" class="form-control" type="number">
+                        <span id="span_calculate" class="material-icons">calculate</span>
+                        <label class="label_standart" for="floatingInput"><strong>Cantidad:</strong></label>
+                        <label id="label_cantidad_to"></label>
+                        <div id="alert_success" class="alert alert-success alert_standart" role="alert"></div>
+                        <div id="alert_warning" class="alert alert-warning alert_standart" role="alert"></div>
+                        <div id="alert_danger" class="alert alert-danger alert_standart" role="alert"></div>
+                        <br>
+                        <label class="label_standart label_pu" for="floatingInput"><strong>PU:</strong></label>
+                        <label id="label_pu"></label>
+                        <br>
+                        <button id="button_close" class="btn btn-md" type="button">Cerrar</button>
+                        <button id="button_save" class="btn btn-md" type="button">Guardar</button>
+                    </form>
+                </div>
+                <div id="div_balance">
+                    <label id="label_balance" class="label_titulo">Balance de cuenta</label>
+                    <span id="span_update" class="material-icons span_update">update</span>
+                    <br>
+                    <label><strong>Invertido:</strong></label>
+                    <label id="label_invested"></label>
+                    <br>
+                    <label><strong>Recuperado:</strong></label>
+                    <label id="label_recovered"></label>
+                    <br>
+                    <label><strong>V. de compra:</strong></label>
+                    <label id="label_purchase_value"></label>
+                    <br>
+                    <label><strong>V. actual:</strong></label>
+                    <label id="label_current_value"></label>
+                </div>
+                <div id="div_resumen">
+                    <label id="label_resumen" class="label_titulo">Cantidad de cryptos</label>
+                    <table id="table_cryptos">
+                        <tr>
+                            <th>Crypto</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <strong>&copy; 2024 - Todos los derechos reservados. - refound404
+
+        </footer>
+        
+</html>
